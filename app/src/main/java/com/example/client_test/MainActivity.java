@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         handler.post(new Runnable() {
             @Override
             public void run() {
-                msgList.addView(textView(message, color));
+                msgList.addView(textView(message.toUpperCase(), color));
             }
         });
     }
